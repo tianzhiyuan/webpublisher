@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'E:\pyprj\AutoPublisher\Main.ui'
 #
-# Created: Thu Feb 13 16:20:56 2014
+# Created: Fri Jun 27 01:21:34 2014
 #      by: PyQt4 UI code generator 4.10.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -28,7 +28,7 @@ class Ui_Dialog(object):
         Dialog.setObjectName(_fromUtf8("Dialog"))
         Dialog.resize(479, 565)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(_fromUtf8("项目1.ico")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8("C:/Users/smellycat/.designer/backup/项目1.ico")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Dialog.setWindowIcon(icon)
         Dialog.setSizeGripEnabled(True)
         self.openBtn = QtGui.QPushButton(Dialog)
@@ -41,7 +41,7 @@ class Ui_Dialog(object):
         self.filepathTxt.setGeometry(QtCore.QRect(10, 10, 361, 31))
         self.filepathTxt.setObjectName(_fromUtf8("filepathTxt"))
         self.resultTxt = QtGui.QPlainTextEdit(Dialog)
-        self.resultTxt.setGeometry(QtCore.QRect(10, 220, 441, 251))
+        self.resultTxt.setGeometry(QtCore.QRect(10, 290, 441, 181))
         self.resultTxt.setObjectName(_fromUtf8("resultTxt"))
         self.zipBtn = QtGui.QPushButton(Dialog)
         self.zipBtn.setGeometry(QtCore.QRect(150, 50, 71, 31))
@@ -57,6 +57,26 @@ class Ui_Dialog(object):
         self.checkBoxGroup.setGeometry(QtCore.QRect(10, 90, 441, 121))
         self.checkBoxGroup.setTitle(_fromUtf8(""))
         self.checkBoxGroup.setObjectName(_fromUtf8("checkBoxGroup"))
+        self.isIncrement = QtGui.QCheckBox(Dialog)
+        self.isIncrement.setGeometry(QtCore.QRect(10, 220, 91, 16))
+        self.isIncrement.setObjectName(_fromUtf8("isIncrement"))
+        self.dateTimeBefore = QtGui.QDateTimeEdit(Dialog)
+        self.dateTimeBefore.setEnabled(False)
+        self.dateTimeBefore.setGeometry(QtCore.QRect(210, 220, 194, 22))
+        self.dateTimeBefore.setMaximumDateTime(QtCore.QDateTime(QtCore.QDate(2100, 12, 31), QtCore.QTime(23, 59, 59)))
+        self.dateTimeBefore.setMinimumDateTime(QtCore.QDateTime(QtCore.QDate(2000, 9, 14), QtCore.QTime(0, 0, 0)))
+        self.dateTimeBefore.setCalendarPopup(True)
+        self.dateTimeBefore.setObjectName(_fromUtf8("dateTimeBefore"))
+        self.label = QtGui.QLabel(Dialog)
+        self.label.setGeometry(QtCore.QRect(150, 220, 54, 21))
+        self.label.setObjectName(_fromUtf8("label"))
+        self.label_2 = QtGui.QLabel(Dialog)
+        self.label_2.setGeometry(QtCore.QRect(410, 220, 54, 21))
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.deleteEmptyFolder = QtGui.QCheckBox(Dialog)
+        self.deleteEmptyFolder.setEnabled(False)
+        self.deleteEmptyFolder.setGeometry(QtCore.QRect(10, 260, 131, 16))
+        self.deleteEmptyFolder.setObjectName(_fromUtf8("deleteEmptyFolder"))
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -74,6 +94,10 @@ class Ui_Dialog(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">注意：</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1. 本程序会删除和覆盖发布路径文件夹中的所有文件，在发布前要做好备份。</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2. 发布过程中可能会假死，耐心等待。</p></body></html>", None))
+        self.isIncrement.setText(_translate("Dialog", "是否增量更新", None))
+        self.label.setText(_translate("Dialog", "<html><head/><body><p>删除早于</p></body></html>", None))
+        self.label_2.setText(_translate("Dialog", "<html><head/><body><p>的文件</p></body></html>", None))
+        self.deleteEmptyFolder.setText(_translate("Dialog", "是否删除空文件夹", None))
 
 
 if __name__ == "__main__":

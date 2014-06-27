@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>项目1.ico</normaloff>项目1.ico</iconset>
+    <normaloff>C:/Users/smellycat/.designer/backup/项目1.ico</normaloff>C:/Users/smellycat/.designer/backup/项目1.ico</iconset>
   </property>
   <property name="sizeGripEnabled">
    <bool>true</bool>
@@ -60,9 +60,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>220</y>
+     <y>290</y>
      <width>441</width>
-     <height>251</height>
+     <height>181</height>
     </rect>
    </property>
   </widget>
@@ -125,6 +125,97 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="title">
     <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="isIncrement">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>是否增量更新</string>
+   </property>
+  </widget>
+  <widget class="QDateTimeEdit" name="dateTimeBefore">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>220</y>
+     <width>194</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maximumDateTime">
+    <datetime>
+     <hour>23</hour>
+     <minute>59</minute>
+     <second>59</second>
+     <year>2100</year>
+     <month>12</month>
+     <day>31</day>
+    </datetime>
+   </property>
+   <property name="minimumDateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2000</year>
+     <month>9</month>
+     <day>14</day>
+    </datetime>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>220</y>
+     <width>54</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;删除早于&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>220</y>
+     <width>54</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;的文件&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="deleteEmptyFolder">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>是否删除空文件夹</string>
    </property>
   </widget>
  </widget>

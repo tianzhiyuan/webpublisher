@@ -12,6 +12,8 @@
                 重构代码
                 增加简单的GUI
                 重新加入压缩功能
+    2014/6/27:  加入增量功能
+    2014/6/27:  加入异步执行
 '''
 ##########################################################################################
 import os
@@ -150,8 +152,8 @@ class PublishHelper:
         if(not os.path.exists(dstPath)):
             os.makedirs(dstPath)
         import zipfile
-        v_str = time.strftime('%Y-%m-%d_%H_%M_%S',time.localtime(time.time()))
-        zipfilename = os.path.join(dstPath,  "%s[%s].zip"%(prjName,  v_str))
+        v_str = time.strftime('%Y%m%d_%H%M%S',time.localtime(time.time()))
+        zipfilename = os.path.join(dstPath,  "%s_%s.zip"%(v_str,  prjName  ))
         filelist = []
         if os.path.isfile(srcPath):
             filelist.append(srcPath)

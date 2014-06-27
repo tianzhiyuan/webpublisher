@@ -5,4 +5,4 @@
 环境要求：
     python3.x+MSBUILD
 使用方式：
-    点击start.py运行，或者使用cx_Freeze打包成exe文件执行
+    点击start.py运行，或者使用cx_Freeze打包成exe文件执行(执行setup.py build)
