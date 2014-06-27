@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>C:/Users/smellycat/.designer/backup/项目1.ico</normaloff>C:/Users/smellycat/.designer/backup/项目1.ico</iconset>
+    <normaloff>项目1.ico</normaloff>项目1.ico</iconset>
   </property>
   <property name="sizeGripEnabled">
    <bool>true</bool>

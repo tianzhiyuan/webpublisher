@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'E:\pyprj\AutoPublisher\Main.ui'
 #
-# Created: Fri Jun 27 01:21:34 2014
+# Created: Sat Jun 28 00:11:00 2014
 #      by: PyQt4 UI code generator 4.10.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -28,7 +28,7 @@ class Ui_Dialog(object):
         Dialog.setObjectName(_fromUtf8("Dialog"))
         Dialog.resize(479, 565)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(_fromUtf8("C:/Users/smellycat/.designer/backup/项目1.ico")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8("项目1.ico")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Dialog.setWindowIcon(icon)
         Dialog.setSizeGripEnabled(True)
         self.openBtn = QtGui.QPushButton(Dialog)

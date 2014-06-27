@@ -42,7 +42,7 @@ class MyThread(QtCore.QThread):
                 else:
                     self.textarea.appendPlainText('#项目已发布到：%s'%(c.PublishPath))
                     if(self.IsIncrement):
-                        self.deleteOldFiles(c.PublishPath)
+                        self.deleteFiles(c.PublishPath)
             except Exception as e:
                 self.textarea.appendPlainText("%s"%(e))
             self.textarea.appendPlainText('####################################')
