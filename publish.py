@@ -143,8 +143,13 @@ class PublishHelper:
         return config
     @staticmethod
     def ProcessGeneralConfig(config):
+        outputs = []
         for path in config.SvnPaths:
-            os.system("svn update %s"%(path))
+            status,  output = getstatusoutput("svn update %s"%(path))
+            
+            outputs.append((output,  path))
+            
+        return outputs
     @staticmethod
     def ZipFile(srcPath, prjName,  dstPath):
         if(not os.path.exists(srcPath)):
