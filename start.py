@@ -94,6 +94,8 @@ class StartQT4(QtGui.QDialog):
         self.ui = Ui_Dialog()
         self.ui.setupUi(self)
         self.Published = False
+        self.setWindowFlags(QtCore.Qt.WindowSystemMenuHint | QtCore.Qt.WindowTitleHint |QtCore.Qt.WindowMinimizeButtonHint )
+        self.setFixedSize(self.size())
         
         QtCore.QObject.connect(self.ui.openBtn,QtCore.SIGNAL("clicked()"), self.file_dialog)
         QtCore.QObject.connect(self.ui.loadBtn,  QtCore.SIGNAL("clicked()"),  self.file_exec)
@@ -106,7 +108,7 @@ class StartQT4(QtGui.QDialog):
         self.publishedPaths = []
         self._LoadDefaultConfig()
         self.ui.dateTimeBefore.setDateTime(QtCore.QDateTime(QtCore.QDate.currentDate()))
-        self.ui.dateTimeBefore.setMaximumDateTime(QtCore.QDateTime(QtCore.QDate.currentDate()))
+        self.ui.dateTimeBefore.setMaximumDateTime(QtCore.QDateTime(QtCore.QDate.currentDate().addDays(1)))
         self.ui.resultTxt.setOpenExternalLinks(True)
         self.threads = []
     def _LoadDefaultConfig(self):
